@@ -1,4 +1,4 @@
-package commands;
+import commands.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public class CommandHandler {
         if (command == null){
             return "Incorrect command";
         }
-        if (listHistory.size() >= 3){
+        if (listHistory.size() >= 15){
             listHistory.remove(0);
         }
         listHistory.add(str);
